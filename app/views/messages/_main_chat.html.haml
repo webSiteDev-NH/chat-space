@@ -18,12 +18,12 @@
     %p.message__list__text スクール
 
   .form
-    %form.form__box{:action =>"", :method => "post"}
+    %form.form__box{action: "", method: "post"}
     .block__input
       .block__input__box
-        %input.block__input__box__send-field{:name => "send-field", :type => "text", :placeholder => "type a message"}
+        %input.block__input__box__send-field{name: "send-field", type: "text", placeholder: "type a message"}
         %label{class: "block__input__box__image"}
           = icon( 'fag', 'image' )
-          %input.lavel{:type => "file"}
+          %input.lavel{type: "file"}
       = link_to "#", class: "block__input__send-btn" do
         Send
