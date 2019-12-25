@@ -1,0 +1,11 @@
+.message__list
+  .message__list__upper
+    .message__list__upper__sender
+      = message.user.name
+    .message__list__upper__date
+      = message.created_at.strftime("%y年%m月%d日 %H時%M分")
+  .message__list__lower
+    - if message.text.present?
+      %p.message__list__lower__text
+        = message.text
+    = image_tag message.image.url, class: "message__list__lower__image" if message.image.present?
