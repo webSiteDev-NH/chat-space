@@ -25,5 +25,14 @@
         %label{class: "block__input__box__image"}
           = icon( 'fag', 'image' )
           %input.lavel{type: "file"}
-      = link_to "#", class: "block__input__send-btn" do
+      = link_to group_messages_path(current_user), class: "block__input__send-btn" do
         Send
+  -# .form
+  -#   = form_for [@group,@message] do |f|
+  -#     .block__input
+  -#       .block__input__box
+  -#         = f.text_field :text, class: "block__input__box__send-field", placeholder: "type a message"
+  -#         = f.label :image, class: "block__input__box__image" do
+  -#           = icon( 'fag', 'image' )
+  -#           = f.file_field :image, class: "lavel"
+  -#       = f.submit 'Send', class: "block__input__send-btn"

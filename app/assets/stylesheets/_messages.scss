@@ -46,6 +46,7 @@
   .groups{
     background-color: #2f3e51;
     height: calc( 100vh - 100px );
+    overflow: scroll;
     .group__list{
       height: 91px;
       width: 260px;
@@ -81,7 +82,8 @@
           color: #333333;
           margin-bottom: 15px;
         }
-        &__message{
+        &__member{
+          display: flex;
           height: 12px;
           font-size: 12px;
           color: #999999;
@@ -98,32 +100,36 @@
       }
     }
   }
-  .message__list{
+  .messages{
     height: calc( 100vh - 190px );
+    width: calc( 100vw - 300px );
     background-color: #fafafa;
-    &__upper{
-      height: 63px;
-      display: flex;
-      padding: 35px 12px 0px 40px;
-      &__sender{
-        height: 16px;
-        font-size: 16px;
-        color: #333333;
-        font-weight: bold;
+    overflow: scroll;
+    .message__list{
+      margin-bottom: 20px;
+      &__upper{
+        display: flex;
+        padding: 35px 12px 0px 40px;
+        &__sender{
+          font-size: 16px;
+          color: #333333;
+          font-weight: bold;
+        }
+        &__date{
+          font-size: 12px;
+          color: #999999;
+          margin-left: 10px;
+        }
       }
-      &__date{
-        height: 16px;
-        line-height: 16px;
-        font-size: 12px;
-        color: #999999;
-        margin-left: 10px;
+      &__lower{
+        &__text{
+          color:#434A54;
+          font-size: 14px;
+          padding: 0px 46px 0px 40px;
+          margin-top: 10px;
+          margin-bottom: 20px;
+        }
       }
-    }
-    &__text{
-      height: 60px;
-      color:#434A54;
-      font-size: 14px;
-      padding: 0px 46px 0px 40px;
     }
   }
   .form{
