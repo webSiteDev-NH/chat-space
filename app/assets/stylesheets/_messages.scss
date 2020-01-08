@@ -133,7 +133,7 @@
     }
   }
   .form{
-    weight: calc( 100vh - 300px );
+    width: calc( 100vw - 300px );
     height: 90px;
     background-color: #d2d2d2;
     .block__input{
@@ -145,30 +145,30 @@
           height: 50px;
           width: 950px;
           padding: 0px 0px 0px 10px;
-          margin: 20px 0px 0px 40px;
+          margin: 20px 20px 0px 20px;
         }
         &__image{
           font-family: "Font Awesome 5 Free";
           position: absolute;
           top: 35px;
-          left: 950px;
+          left: 920px;
           font-size: 1.3rem;
           cursor: pointer;
         }
         .lavel{
           display: none;
         }
-      }
-      &__send-btn{
+        &__send-btn{
         height: 50px;
         line-height: 50px;
-        width: 100px;
+        width: 80px;
         background-color: #38aef0;
         color: white;
         font-weight: bold;
-        margin: 20px 0px 40px 15px;
+        margin: 20px 20px 0px 0px;
         text-align: center;
         text-decoration: none;
+        }
       }
     }
   }
