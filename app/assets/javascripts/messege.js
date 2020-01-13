@@ -62,7 +62,7 @@ $(function(){
       $('.messages').append(insertHTML);
       $('.messages').animate({ scrollTop: $('.messages')[0].scrollHeight});
       $("#new_message")[0].reset();
-      $("block__input__box__send-btn").prop("disabled", false);
+      $(".block__input__box__send-btn").prop("disabled", false);
       }
     })
     .fail(function(){
