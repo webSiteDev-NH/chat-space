@@ -11,6 +11,9 @@
   .side-bar{
     width: 300px;
     height: 100vh;
+    a {
+      color:#ffffff;
+    }
     .side-header{
       background-color: #253141;
       height: 100px;
@@ -50,7 +53,6 @@
     .group__list{
       height: 91px;
       width: 260px;
-      color: #ffffff;
       font-weight: bold;
       &__title{
         height: 40px;
@@ -74,6 +76,9 @@
       display: flex;
       justify-content: space-between;
       font-weight: bold;
+      a{
+        color: #38aef0;
+      }
       &__left{
         margin-top: 35px;
         &__name{
@@ -93,7 +98,6 @@
         height: 40px;
         line-height: 40px;
         font-size: 16px;
-        color: #38aef0;
         padding: 0 20px;
         margin-top: 28px;
         border: solid 1px #38aef0;
