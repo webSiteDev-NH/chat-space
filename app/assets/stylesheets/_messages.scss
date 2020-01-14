@@ -140,40 +140,44 @@
     width: calc( 100vw - 300px );
     height: 90px;
     background-color: #d2d2d2;
-    .block__input{
+    .new_message{
       display: flex;
-      &__box{
-        position: relative;
-        display: flex;
+    }
+    .block__input__box{
+      width: 100%;
+      position: relative;
         &__send-field{
+          width: 96%;
           height: 50px;
-          width: 950px;
           padding: 0px 0px 0px 10px;
-          margin: 20px 20px 0px 20px;
+          margin: 20px 0px 0px 20px;
+          position: relative;
         }
         &__image{
           font-family: "Font Awesome 5 Free";
-          position: absolute;
-          top: 35px;
-          left: 920px;
           font-size: 1.3rem;
           cursor: pointer;
-        }
-        .lavel{
-          display: none;
-        }
-        &__send-btn{
-        height: 50px;
-        line-height: 50px;
-        width: 80px;
-        background-color: #38aef0;
-        color: white;
-        font-weight: bold;
-        margin: 20px 20px 0px 0px;
-        text-align: center;
-        text-decoration: none;
+          margin-top: 20px;
+          position: absolute;
+          top: 15px;
+          left: 94%;
+          &--lavel{
+            display: none;
+          }
         }
       }
+    .block__input__box__send-btn{
+      line-height: 50px;
+      height: 50px;
+      width: 10%;
+      background-color: #38aef0;
+      color: white;
+      font-weight: bold;
+      text-align: center;
+      text-decoration: none;
+      margin-right: 20px;
+      margin-top: 20px;
+      cursor: pointer;
     }
   }
 }
